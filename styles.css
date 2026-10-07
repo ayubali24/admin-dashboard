@@ -13,25 +13,54 @@ body, html {
 }
 
 .sidebar {
-    background-color: red;
+    background-color: rgb(10, 140, 216);
     grid-column: span 1;
     grid-row: span 2;
+    font-size: 20px;
+    color: white;
+    display: grid;
+    grid-template-rows: 50px 200px 100px 0;
+    gap: 30px;
 }
 
 .header {
-    background-color: blue;
+    background-color: white;
+    color: black;
     grid-column: 2 / 3;
-    /* grid-row: span 1; */
 }
 
 .main-content {
-    background-color: green;
+    background-color: gray;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
-.box {
-    height: 200px;
-    width: 200px;
-    border: 5px solid black;
+li {
+    list-style-type: none;
+}
+li + li{
+    margin: 12px 0;
+}
+
+.sidebar li {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 12px;
+}
+
+.sidebar ul img {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar .dashboard img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.dashboard {
+    padding-left: 15px;
+    font-size: 30px;
+    justify-self: start;
 }
