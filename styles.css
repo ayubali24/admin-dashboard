@@ -23,25 +23,6 @@ body, html {
     gap: 30px;
 }
 
-.header {
-    background-color: white;
-    color: black;
-    grid-column: 2 / 3;
-}
-
-.main-content {
-    background-color: gray;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-li {
-    list-style-type: none;
-}
-li + li{
-    margin: 12px 0;
-}
-
 .sidebar li {
     display: grid;
     grid-template-columns: 24px 1fr;
@@ -58,9 +39,93 @@ li + li{
     height: 30px;
 }
 
-
 .dashboard {
     padding-left: 15px;
     font-size: 30px;
     justify-self: start;
 }
+
+
+
+.header {
+    background-color: white;
+    color: black;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header img {
+    width: 20px;
+    height: 20px;
+}
+
+.header .search-bar {
+    display: grid;
+    grid-template-columns: 24px 550px 0;
+    grid-template-rows: 24px;
+    padding-left: 30px;
+    align-self: center;
+}
+
+.header .profile-card {
+    display: grid;
+    grid-template-columns: repeat(3, 25px);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-name {
+    white-space: nowrap;
+    margin: 0;
+}
+
+.header div {
+    /* border: 2px solid black; */
+}
+
+.header .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.header .greeting {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.greeting img {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    margin: 0;
+    text-wrap: 20px;
+}
+
+.main-content {
+    background-color: gray;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+li {
+    list-style-type: none;
+}
+li + li{
+    margin: 12px 0;
+}
+
